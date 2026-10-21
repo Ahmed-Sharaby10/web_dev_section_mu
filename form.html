@@ -27,6 +27,46 @@
     </tr>
 
 </table>
+
+<form action="#"  method="post">
+    <h1>Add New Task</h1>
+    <label for="task" style="display: block; margin-bottom: 2px;">task name</label>
+    <input style="display: block;" type="text" name="task" id="" placeholder="Enter Task Name">
+
+    <label for="task" style="display: block;">Category</label>
+    <input name="cat" type="radio" id="option" >
+    <label  for="option">Work</label>
+    
+
+    <input name="cat" type="radio" id="option" >
+    <label  for="option">Personal</label>
+    
+    <input name="cat" type="radio" id="option" >
+    <label  for="option">Study</label>
+    
+    <input name="cat" type="radio" id="option" >
+    <label  for="option">Shopping</label>
+
+    <label for="sel" style="display: block;">Priority</label>
+    <select  style="display: block;" name="" id="sel">
+        <option value="">low</option>
+        <option value="">Mid</option>
+        <option value="">High</option>
+    </select>
+<div>
+    <label  for="dat">Due Date</label>
+    <input type="date" id="dat">
+    </div>
+
+    <div>
+    <label for="des">Description</label>
+    <textarea  style="display: block; height: 40px;" name="" id="des" placeholder="Enter task Description"></textarea>
+    </div>
+    <button type="reset">reset</button>
+    <button type="submit">subnit</button>
+</form>
+
+
    
 </body>
 </html>
