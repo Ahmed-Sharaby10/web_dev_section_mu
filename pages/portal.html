@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal | Hazem Mahmoud</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/portal.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="../index.html">Student Portal</a>
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="portal.html" aria-current="page">Portal</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="portal-layout">
+        <aside class="sidebar" aria-label="Portal sidebar">
+            <h2 class="sidebar-title">Dashboard</h2>
+            <ul class="sidebar-menu">
+                <li><a href="portal.html">Overview</a></li>
+                <li><a href="tasks.html">My Tasks</a></li>
+                <li><a href="../index.html">Academy Home</a></li>
+                <li><a href="login.html">Switch Account</a></li>
+            </ul>
+        </aside>
+
+        <main class="portal-content">
+            <h1 class="portal-welcome">Welcome Back</h1>
+            <p class="portal-sub">Track your courses, tasks, and learning progress.</p>
+
+            <section class="portal-cards" aria-label="Quick summary">
+                <article class="portal-card">
+                    <h3>My Courses</h3>
+                    <p>HTML, CSS &amp; JavaScript</p>
+                </article>
+                <article class="portal-card">
+                    <h3>Tasks</h3>
+                    <p>View &amp; add lab assignments</p>
+                </article>
+                <article class="portal-card">
+                    <h3>Progress</h3>
+                    <p>Section 8 completed</p>
+                </article>
+            </section>
+
+            <section class="continue-box" aria-labelledby="continue-heading">
+                <div>
+                    <h2 id="continue-heading">Continue Learning</h2>
+                    <p>CSS Grid, Flexbox layouts, and semantic HTML structure</p>
+                </div>
+                <a class="btn" href="tasks.html">Continue</a>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <span>&copy; 2026 Student Portal</span>
+        <span>Web Development Lab</span>
+    </footer>
+</body>
+</html>

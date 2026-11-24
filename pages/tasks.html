@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks | Hazem Mahmoud</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="../index.html">HAZEM MAHMOUD</a>
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="portal.html">Portal</a></li>
+                <li><a href="tasks.html" aria-current="page">Tasks</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title">Task Manager</h1>
+
+        <div class="table-wrap">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Category</th>
+                        <th>Priority</th>
+                        <th>Due Date</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="task-table-body">
+                    <tr>
+                        <td>CSS Layout Practice</td>
+                        <td>Study</td>
+                        <td><span class="badge badge-high">High</span></td>
+                        <td>2026-11-30</td>
+                        <td>Organize Flexbox and Grid sections cleanly</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="card" aria-labelledby="add-task-heading">
+            <h2 id="add-task-heading" class="section-title">Add New Task</h2>
+
+            <form id="task-form" action="#" method="post">
+                <div class="field">
+                    <label for="task-name">Task Name</label>
+                    <input
+                        type="text"
+                        id="task-name"
+                        name="task_name"
+                        placeholder="Enter task name"
+                        required
+                    >
+                </div>
+
+                <div class="field">
+                    <span class="field-label">Category</span>
+                    <div class="radio-group" role="radiogroup" aria-label="Category">
+                        <label class="radio-option">
+                            <input type="radio" name="category" value="Work" checked>
+                            Work
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="category" value="Personal">
+                            Personal
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="category" value="Study">
+                            Study
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="category" value="Shopping">
+                            Shopping
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="priority">Priority</label>
+                    <select id="priority" name="priority">
+                        <option value="Low">Low</option>
+                        <option value="Medium" selected>Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="due-date">Due Date</label>
+                    <input type="date" id="due-date" name="due_date">
+                </div>
+
+                <div class="field">
+                    <label for="description">Description</label>
+                    <textarea
+                        id="description"
+                        name="description"
+                        placeholder="Enter task description"
+                    ></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <button type="submit" class="btn">Add Task</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>&copy; 2026 Hazem Mahmoud &mdash; Web Dev Lab</span>
+        <span>Task Manager</span>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

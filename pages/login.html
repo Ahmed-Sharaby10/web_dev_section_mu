@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Hazem Mahmoud</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="../index.html">HAZEM MAHMOUD</a>
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="portal.html">Portal</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="login.html" aria-current="page">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="auth-card">
+        <h1>Welcome back</h1>
+        <p class="subtitle">Log in to your account</p>
+
+        <form action="#" method="post">
+            <div class="field">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your username"
+                    autocomplete="username"
+                    required
+                >
+            </div>
+
+            <div class="field">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="btn btn-full">Log in</button>
+        </form>
+
+        <p class="form-footer-link">
+            Don't have an account? <a href="register.html">Register</a>
+        </p>
+    </main>
+
+    <footer class="site-footer">
+        <span>&copy; 2026 Hazem Mahmoud &mdash; Web Dev Lab</span>
+        <span>Login</span>
+    </footer>
+</body>
+</html>
